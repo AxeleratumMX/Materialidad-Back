@@ -1,0 +1,74 @@
+{
+	"rules": [{
+			"name": "yearsBetweenDates",
+			"type": "calculation",
+			"descripcion": "Calcular Años entre fechas",
+			"nivel": "0",
+			"params": [{
+					"id": "startDate",
+					"value": "{{nombre del campo fecha inicial}}"
+				},
+				{
+					"id": "endDate",
+					"value": "{{nombre del campo fecha final}}"
+				}
+			]
+
+		},
+		{
+			"name": "aditionalsMonthsBetweenDates",
+			"type": "calculation",
+			"descripcion": "Calcular meeses adicionales entre fechas",
+			"nivel": "0",
+			"params": [{
+					"id": "startDate",
+					"value": "{{nombre del campo fecha inicial}}"
+				},
+				{
+					"id": "endDate",
+					"value": "{{nombre del campo fecha final}}"
+				}
+			]
+		},
+		{
+			"name": "aditionalsDaysBetweenDates",
+			"type": "calculation",
+			"descripcion": "Calcular dias adicionales entre fechas",
+			"nivel": "0",
+			"params": [{
+					"id": "startDate",
+					"value": "{{nombre del campo fecha inicial}}"
+				},
+				{
+					"id": "endDate",
+					"value": "{{nombre del campo fecha final}}"
+				}
+			]
+		},
+		{
+			"name": "addNumYearsToDate",
+			"descripcion": "Adicionar años a una fecha",
+			"type": "calculation",
+			"level": "0",
+			"params": [{
+					"id": "date",
+					"value": "{{nombre del campo fecha al que se le va sumar los años}}"
+				},
+				{
+					"id": "numYears",
+					"value": "{{nombre del campo que representa la cantidad de años a sumar}}"
+				}
+			]
+		},
+		"operation": {
+			"name": "isDateGreaterOrEqualThan",
+			"type": "validation",
+			"descripcion": "Verificar que la fecha sea mayor o igual que otra fecha",
+			"level": "0",
+			"params": [{
+				"id": "date",
+				"value": "{{fecha con la que se va comparar}}"
+			}]
+		}
+	]
+}

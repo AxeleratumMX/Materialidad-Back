@@ -1,0 +1,1116 @@
+{
+	"tipo": "TOWER",
+	"nameTemplate": "TORRE",
+	"values": [
+		{
+			"id": "acuerdoId",
+			"sectionId": "1",
+			"description": "Acuerdo",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "subAcuerdo",
+			"sectionId": "1",
+			"description": "Sub Acuerdo",
+			"dataType": "option",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "/api/v1/catalog/domains/SUB_ACUERDO",
+			"regex": ""
+		},
+		{
+			"id": "folSalesForce",
+			"sectionId": "1",
+			"description": "Folio Sales Force",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "folOperations",
+			"sectionId": "1",
+			"description": "Folio Operaciones",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+
+		{
+			"id": "comentarios",
+			"sectionId": "1",
+			"description": "Comentarios",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "cliente",
+			"sectionId": "2",
+			"description": "Cliente",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "idCliente",
+			"sectionId": "2",
+			"description": "ID Cliente",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "telefono",
+			"sectionId": "2",
+			"description": "Teléfono",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "celular",
+			"sectionId": "2",
+			"description": "Celular",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "email",
+			"sectionId": "2",
+			"description": "Email",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "^[a-zA-Z0-9.!#$%&\u2019*+\/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$"
+		},
+		{
+			"id": "direccionCliente",
+			"sectionId": "2",
+			"description": "Dirección",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "contacto",
+			"sectionId": "2",
+			"description": "Contacto",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "tipoAntena",
+			"sectionId": "equipos",
+			"description": "Tipo Antena",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "/api/v1/catalog/domains/TIPO_ANTENA_EQUIPO",
+			"regex": ""
+		},
+		{
+			"id": "tipoLinea",
+			"sectionId": "equipos",
+			"description": "Tipo de Linea",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "orientacion",
+			"sectionId": "equipos",
+			"description": "Orientación",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "modelo",
+			"sectionId": "equipos",
+			"description": "Modelo",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "azimut",
+			"sectionId": "equipos",
+			"description": "Azimut",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "tipoMontaje",
+			"sectionId": "equipos",
+			"description": "Tipo de Montaje",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "marca",
+			"sectionId": "equipos",
+			"description": "Marca",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "banda",
+			"sectionId": "equipos",
+			"description": "Banda",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "diametro",
+			"sectionId": "equipos",
+			"description": "Diámetro (metros)",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "frecuencia",
+			"sectionId": "equipos",
+			"description": "Frecuencia",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "peso",
+			"sectionId": "equipos",
+			"description": "Peso",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "altura",
+			"sectionId": "equipos",
+			"description": "Altura (pies)",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "rentaEquipo",
+			"sectionId": "equipos",
+			"description": "Renta",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "rentaEquipo",
+				"descripcion": "Cálculo de renta del equipo en la fila",
+				"level": "1",
+				"type": "calculation",
+				"params": [{
+					"id": "col",
+					"value": "tipoAntena"
+				}]
+			}
+		},
+		{
+			"id": "equipoAdicional",
+			"sectionId": "equipos",
+			"description": "Equipo Adicional",
+			"dataType": "checkbox",
+			"content": "false",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "porcentajeGanancia",
+			"sectionId": "6",
+			"description": "Porcentaje de ganancia",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "tipoDocumento",
+			"sectionId": "1",
+			"description": "Tipo de Documento",
+			"dataType": "option",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "/api/v1/catalog/domains/TIPO_DOCUMENTO",
+			"regex": ""
+		},
+
+		{
+			"id": "montoReduccion",
+			"sectionId": "6",
+			"description": "Monto de reducción",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "totalRentaReduccion",
+			"sectionId": "6",
+			"description": "Total de renta con reducción",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "subtraction",
+				"descripcion": "Restar valores",
+				"level": "4",
+				"type": "calculation",
+				"params": [{
+					"id": "value",
+					"value": "rentaTotalTorre"
+				},
+					{
+						"id": "value",
+						"value": "montoReduccion"
+					}
+				]
+			}
+		},
+
+		{
+			"id": "tipoIncremento",
+			"sectionId": "4",
+			"description": "Tipo de Incremento",
+			"dataType": "option",
+			"content": "Basic Only",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "/api/v1/catalog/domains/TIPO_INCREMENTO",
+			"regex": ""
+		},
+		{
+			"id": "porcentajeIncremento",
+			"sectionId": "4",
+			"description": "Porcentaje de Incremento",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": true,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "enableEditByListValue",
+				"descripcion": "Se habilita si la lista indicada en parametro tiene el valor que se indica",
+				"level": "1",
+				"type": "validation",
+				"params": [{
+					"id": "list",
+					"value": "tipoIncremento"
+				},
+					{
+						"id": "value",
+						"value": "Basic Only"
+					}
+				]
+			}
+		},
+		{
+			"id": "fechaIncremento",
+			"sectionId": "4",
+			"description": "Fecha de Incremento",
+			"dataType": "date",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "porcentajeMinimo",
+			"sectionId": "4",
+			"description": "Porcentaje Mínimo",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": true,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "enableEditByListValue",
+				"descripcion": "Se habilita si la lista indicada en parametro tiene el valor que se indica",
+				"level": "1",
+				"type": "validation",
+				"params": [{
+					"id": "list",
+					"value": "tipoIncremento"
+				},
+					{
+						"id": "value",
+						"value": "Greater Of"
+					},
+					{
+						"id": "value",
+						"value": "Leaser Of"
+					}
+				]
+			}
+		},
+		{
+			"id": "porcentajeMaximo",
+			"sectionId": "4",
+			"description": "Porcentaje Máximo",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "tipoIndice",
+			"sectionId": "4",
+			"description": "Tipo de Indice",
+			"dataType": "option",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "/api/v1/catalog/domains/TIPO_INDICE",
+			"regex": ""
+		},
+		{
+			"id": "cpi",
+			"sectionId": "4",
+			"description": "CPI",
+			"dataType": "number",
+			"content": "-2",
+			"editable": true,
+			"optional": true,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "enableEditByListValue",
+				"descripcion": "Se habilita si la lista indicada en parametro tiene el valor que se indica",
+				"level": "1",
+				"type": "validation",
+				"params": [{
+					"id": "list",
+					"value": "tipoIncremento"
+				},
+					{
+						"id": "value",
+						"value": "Index Only"
+					}
+				]
+			}
+		},
+		{
+			"id": "aplicaColloCredit",
+			"sectionId": "4",
+			"description": "¿Aplica Collo Credit?",
+			"dataType": "checkbox",
+			"content": "false",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "montoColloCredit",
+			"sectionId": "4",
+			"description": "Monto Collo Credit",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "idActivo",
+			"sectionId": "5",
+			"description": "Asset Number",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": true,
+			"apiRestListOfValue": "",
+			"regex": "\\d+",
+			"operation": {
+				"name": "findValueInContract",
+				"descripcion": "Asigna un valor que se ha agregado en el contrato ",
+				"level": "1",
+				"type": "validation",
+				"params": [{
+					"id": "idActivo"
+				}]
+			}
+		},
+		{
+			"id": "nombreSitio",
+			"sectionId": "5",
+			"description": "Nombre del sitio",
+			"dataType": "string",
+			"content": "",
+			"editable": false,
+			"optional": true,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "findValueInSitio",
+				"descripcion": "Asigna un valor que se encuentra en base de datos filtrado por key",
+				"level": "2",
+				"type": "validation",
+				"params": [{
+					"id": "key",
+					"value": "idActivo"
+				}, {
+					"id": "set",
+					"value": "nombreSitio"
+				}]
+			}
+		},
+		{
+			"id": "direccionSitio",
+			"sectionId": "5",
+			"description": "Dirección del sitio",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": true,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "findValueInSitio",
+				"descripcion": "Asigna un valor que se encuentra en base de datos filtrado por key",
+				"level": "2",
+				"type": "validation",
+				"params": [{
+					"id": "key",
+					"value": "idActivo"
+				}, {
+					"id": "set",
+					"value": "direccionSitio"
+				}]
+			}
+		},
+		{
+			"id": "tipoSitio",
+			"sectionId": "5",
+			"description": "Tipo de Sitio",
+			"dataType": "string",
+			"content": "",
+			"editable": false,
+			"optional": true,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "findValueInSitio",
+				"descripcion": "Asigna un valor que se encuentra en base de datos filtrado por key",
+				"level": "2",
+				"type": "validation",
+				"params": [{
+					"id": "key",
+					"value": "idActivo"
+				}, {
+					"id": "set",
+					"value": "tipoSitio"
+				}]
+			}
+		},
+		{
+			"id": "latitudSitio",
+			"sectionId": "5",
+			"description": "Latitud",
+			"dataType": "string",
+			"content": "",
+			"editable": false,
+			"optional": true,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "findValueInSitio",
+				"descripcion": "Asigna un valor que se encuentra en base de datos filtrado por key",
+				"level": "2",
+				"type": "validation",
+				"params": [{
+					"id": "key",
+					"value": "idActivo"
+				}, {
+					"id": "set",
+					"value": "latitudSitio"
+				}]
+			}
+		},
+		{
+			"id": "longitudSitio",
+			"sectionId": "5",
+			"description": "Longitud",
+			"dataType": "string",
+			"content": "",
+			"editable": false,
+			"optional": true,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "findValueInSitio",
+				"descripcion": "Asigna un valor que se encuentra en base de datos filtrado por key",
+				"level": "2",
+				"type": "validation",
+				"params": [{
+					"id": "key",
+					"value": "idActivo"
+				}, {
+					"id": "set",
+					"value": "longitudSitio"
+				}]
+			}
+		},
+		{
+			"id": "tipoTorre",
+			"sectionId": "5",
+			"description": "Tipo de Torre",
+			"dataType": "string",
+			"content": "",
+			"editable": false,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "findValueInSitio",
+				"descripcion": "Asigna un valor que se encuentra en base de datos filtrado por key",
+				"level": "2",
+				"type": "validation",
+				"params": [{
+					"id": "key",
+					"value": "idActivo"
+				}, {
+					"id": "set",
+					"value": "tipoTorre"
+				}]
+			}
+
+		},
+		{
+			"id": "alturaTorre",
+			"sectionId": "5",
+			"description": "Altura de Torre",
+			"dataType": "string",
+			"content": "",
+			"editable": false,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "findValueInSitio",
+				"descripcion": "Asigna un valor que se encuentra en base de datos filtrado por key",
+				"level": "2",
+				"type": "validation",
+				"params": [{
+					"id": "key",
+					"value": "idActivo"
+				}, {
+					"id": "set",
+					"value": "alturaTorre"
+				}]
+			}
+
+		},
+		{
+			"id": "arrendador",
+			"sectionId": "5",
+			"description": "Arrendador",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "fechaFirmaContrato",
+			"sectionId": "3",
+			"description": "Fecha Firma de Contrato",
+			"dataType": "date",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "fechaInicioVigencia",
+			"sectionId": "3",
+			"description": "Fecha de Inicio de Vigencia",
+			"dataType": "date",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "isDateGreaterOrEqualThan",
+				"type": "validation",
+				"descripcion": "Verificar que la fecha sea mayor que otra fecha",
+				"level": "1",
+				"params": [{
+					"id": "date",
+					"value": "fechaFirmaContrato"
+				}]
+			}
+		},
+		{
+			"id": "fechaTerminoVigencia",
+			"sectionId": "3",
+			"description": "Fecha Témino de Vigencia",
+			"dataType": "date",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "isDateGreaterThan",
+				"type": "validation",
+				"descripcion": "Verificar que la fecha sea mayor que otra fecha",
+				"level": "2",
+				"params": [{
+					"id": "date",
+					"value": "fechaInicioVigencia"
+				}]
+			}
+		},
+		{
+			"id": "fechaInicioRenta",
+			"sectionId": "3",
+			"description": "Fecha Inicio Renta",
+			"dataType": "date",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "isDateGreaterThan",
+				"type": "validation",
+				"descripcion": "Verificar que la fecha sea mayor que otra fecha",
+				"level": "2",
+				"params": [{
+					"id": "date",
+					"value": "fechaInicioVigencia"
+				}]
+			}
+		},
+		{
+			"id": "sitioAdquirido",
+			"sectionId": "3",
+			"description": "¿Sitio Adquirido?",
+			"dataType": "checkbox",
+			"content": "false",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "fechaAdquisicion",
+			"sectionId": "3",
+			"description": "Fecha de Adquisición",
+			"dataType": "date",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "terminosRenovacion",
+			"sectionId": "3",
+			"description": "Términos de Renovación",
+			"dataType": "option",
+			"content": "AUTO",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "/api/v1/catalog/domains/TERMINO_RENOVACION",
+			"regex": ""
+		},
+		{
+			"id": "numeroRenovaciones",
+			"sectionId": "3",
+			"description": "Número de renovaciones",
+			"dataType": "number",
+			"content": "0",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "\\d+"
+		},
+		{
+			"id": "periodo",
+			"sectionId": "3",
+			"description": "Periodo de Renovación",
+			"dataType": "option",
+			"content": "año",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "/api/v1/catalog/domains/TIME_PERIOD",
+			"regex": ""
+		},
+		{
+			"id": "fechaTerminoRenovacion",
+			"sectionId": "3",
+			"description": "Fecha Término con Renovación",
+			"dataType": "date",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "diasNotificacionRenovar",
+			"sectionId": "3",
+			"description": "Dias de Notificación Renovación",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "diasNotificacionVencimiento",
+			"sectionId": "3",
+			"description": "Días Notificación Terminación",
+			"dataType": "number",
+			"content": "1",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "frecuenciaFacturacion",
+			"sectionId": "3",
+			"description": "Frecuencia Facturación",
+			"dataType": "option",
+			"content": "Mensual",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "/api/v1/catalog/domains/FRECUENCIA_FACTURACION",
+			"regex": ""
+		},
+		{
+			"id": "tipoMoneda",
+			"sectionId": "3",
+			"description": "Tipo Moneda",
+			"dataType": "option",
+			"content": "MXN",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "/api/v1/catalog/domains/TIPO_MONEDA",
+			"regex": ""
+		},
+		{
+			"id": "renta",
+			"sectionId": "3",
+			"description": "Renta Torre",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "rentaEquipoAdicional",
+			"sectionId": "3",
+			"description": "Renta Equipo Adicional",
+			"dataType": "number",
+			"content": "0",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "[0-9]+([\\.,][0-9]+)?",
+			"operation": {
+				"name": "addColList",
+				"descripcion": "Cálculo de renta de equipo adicional",
+				"level": "2",
+				"type": "calculation",
+				"params": [{
+					"id": "list",
+					"value": "equipos"
+				},
+					{
+						"id": "col",
+						"value": "rentaEquipo"
+					}
+				]
+			}
+		},
+
+		{
+			"id": "rentaTotalTorre",
+			"sectionId": "3",
+			"description": "Renta Total Torre",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "[0-9]+([\\.,][0-9]+)?",
+			"operation": {
+				"name": "add",
+				"descripcion": "Sumar valores",
+				"level": "3",
+				"type": "calculation",
+				"params": [{
+					"id": "value",
+					"value": "renta"
+				},
+					{
+						"id": "value",
+						"value": "rentaEquipoAdicional"
+					}
+				]
+			}
+		},
+		{
+			"id": "condicionadoNtpCoc",
+			"sectionId": "3",
+			"description": "Condicionado Ntp/Coc",
+			"dataType": "checkbox",
+			"content": "false",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "colocacionDas",
+			"sectionId": "3",
+			"description": "Colocación Das",
+			"dataType": "checkbox",
+			"content": "false",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "fechaInicioTerreno",
+			"sectionId": "3",
+			"description": "Fecha Inicio Terreno",
+			"dataType": "date",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "rentaTerreno",
+			"sectionId": "3",
+			"description": "Renta de Terreno",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "[0-9]+([\\.,][0-9]+)?",
+			"operation": {
+				"name": "rentaTerreno",
+				"descripcion": "Calcula valor a partir de una tabla",
+				"level": "2",
+				"type": "calculation",
+				"params": [{
+					"id": "searchBy",
+					"value": "idActivo"
+				},
+					{
+						"id": "moneda",
+						"value": "tipoMoneda"
+					}
+				]
+			}
+		},
+		{
+			"id": "rentaAdicionalTerreno",
+			"sectionId": "3",
+			"description": "Renta Adicional Terreno",
+			"dataType": "checkbox",
+			"content": "false",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "[0-9]+([\\.,][0-9]+)?"
+		},
+		{
+			"id": "rentaEspacioAdicional",
+			"sectionId": "3",
+			"description": "Renta Espacio adicional",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "[0-9]+([\\.,][0-9]+)?"
+		},
+		{
+			"id": "rentaTotalTerreno",
+			"sectionId": "3",
+			"description": "Renta Total Terreno",
+			"dataType": "number",
+			"content": "",
+			"editable": false,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "[0-9]+([\\.,][0-9]+)?",
+			"operation": {
+				"name": "add",
+				"descripcion": "Sumar valores",
+				"level": "3",
+				"type": "calculation",
+				"params": [{
+					"id": "value",
+					"value": "rentaTerreno"
+				},
+					{
+						"id": "value",
+						"value": "rentaEspacioAdicional"
+					}
+				]
+			}
+		},
+		{
+			"id": "cancelable",
+			"sectionId": "3",
+			"description": "Cancelable",
+			"dataType": "checkbox",
+			"content": "false",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		}
+
+	],
+	"sections": [{
+		"id": "1",
+		"description": "Información General",
+		"type": "value"
+	},
+		{
+			"id": "2",
+			"description": "Inf. del Cliente",
+			"type": "value"
+		},
+		{
+			"id": "equipos",
+			"description": "Equipos",
+			"type": "list"
+		},
+		{
+			"id": "5",
+			"description": "Información de sitio",
+			"type": "value"
+		},
+		{
+			"id": "3",
+			"description": "Inf. del Contrato",
+			"type": "value"
+		},
+		{
+			"id": "4",
+			"description": "Lease Accounting",
+			"type": "value"
+		},
+		{
+			"id": "6",
+			"description": "Split",
+			"type": "value"
+		}
+	]
+}

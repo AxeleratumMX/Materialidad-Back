@@ -1,0 +1,623 @@
+[{
+	"tipo": "TOWER",
+	"nameTemplate": "TORRE",
+	"values": [{
+			"id": "fechaFirmaContrato",
+			"sectionId": "3",
+			"description": "Fecha Firma de Contrato",
+			"dataType": "date",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		}, {
+			"id": "fechaInicioVigencia",
+			"sectionId": "3",
+			"description": "Fecha de Inicio de Vigencia",
+			"dataType": "date",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "isDateGreaterOrEqualThan",
+				"type": "validation",
+				"descripcion": "Verificar que la fecha sea mayor que otra fecha",
+				"level": "1",
+				"params": [{
+					"id": "date",
+					"value": "fechaFirmaContrato"
+				}]
+			}
+		},
+		{
+			"id": "fechaTerminoVigencia",
+			"sectionId": "3",
+			"description": "Fecha Témino de Vigencia",
+			"dataType": "date",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "isDateGreaterThan",
+				"type": "validation",
+				"descripcion": "Verificar que la fecha sea mayor que otra fecha",
+				"level": "2",
+				"params": [{
+					"id": "date",
+					"value": "fechaInicioVigencia"
+				}]
+			}
+		},
+		{
+			"id": "fechaInicioRenta",
+			"sectionId": "3",
+			"description": "Fecha Inicio Renta",
+			"dataType": "date",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "isDateGreaterThan",
+				"type": "validation",
+				"descripcion": "Verificar que la fecha sea mayor que otra fecha",
+				"level": "2",
+				"params": [{
+					"id": "date",
+					"value": "fechaInicioVigencia"
+				}]
+			}
+		},
+		{
+			"id": "aniosVigencia",
+			"sectionId": "3",
+			"description": "Años de vigencia",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "yearsBetweenDates",
+				"descripcion": "Calcular años entre fecha",
+				"level": "3",
+				"type": "calculation",
+				"params": [{
+						"id": "startDate",
+						"value": "fechaInicioVigencia"
+					},
+					{
+						"id": "endDate",
+						"value": "fechaTerminoVigencia"
+					}
+				]
+			}
+		},
+		{
+			"id": "mesesVigencia",
+			"sectionId": "3",
+			"description": "Meses de vigencia",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "aditionalsMonthsBetweenDates",
+				"descripcion": "Calcular meses adicionales entre la fechas",
+				"level": "3",
+				"type": "calculation",
+				"params": [{
+						"id": "startDate",
+						"value": "fechaInicioVigencia"
+					},
+					{
+						"id": "endDate",
+						"value": "fechaTerminoVigencia"
+					}
+				]
+			}
+		},
+		{
+			"id": "diasVigencia",
+			"sectionId": "3",
+			"description": "Días de vigencia",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "aditionalsDaysBetweenDates",
+				"descripcion": "Calcular días adicionales entre la fechas",
+				"type": "calculation",
+				"level": "3",
+				"params": [{
+						"id": "startDate",
+						"value": "fechaInicioVigencia"
+					},
+					{
+						"id": "endDate",
+						"value": "fechaTerminoVigencia"
+					}
+				]
+			}
+		},
+		{
+			"id": "tipoIncremento",
+			"sectionId": "4",
+			"description": "Tipo de Incremento",
+			"dataType": "option",
+			"content": "Basic Only",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "/api/v1/catalog/domains/TIPO_INCREMENTO",
+			"regex": ""
+		},
+		{
+			"id": "porcentajeIncremento",
+			"sectionId": "4",
+			"description": "Porcentaje de Incremento",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": true,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "enableEditByListValue",
+				"descripcion": "Se habilita si la lista indicada en parametro tiene el valor que se indica",
+				"level": "1",
+				"type": "validation",
+				"params": [{
+						"id": "list",
+						"value": "tipoIncremento"
+					},
+					{
+						"id": "value",
+						"value": "Basic Only"
+					}
+				]
+			}
+		},
+		{
+			"id": "porcentajeMinimo",
+			"sectionId": "4",
+			"description": "Porcentaje Mínimo",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": true,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "enableEditByListValue",
+				"descripcion": "Se habilita si la lista indicada en parametro tiene el valor que se indica",
+				"level": "1",
+				"type": "validation",
+				"params": [{
+						"id": "list",
+						"value": "tipoIncremento"
+					},
+					{
+						"id": "value",
+						"value": "Greater Of"
+					},
+					{
+						"id": "value",
+						"value": "Leaser Of"
+					}
+				]
+			}
+		},
+		{
+			"id": "cpi",
+			"sectionId": "4",
+			"description": "CPI",
+			"dataType": "number",
+			"content": "-2",
+			"editable": true,
+			"optional": true,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "enableEditByListValue",
+				"descripcion": "Se habilita si la lista indicada en parametro tiene el valor que se indica",
+				"level": "1",
+				"type": "validation",
+				"params": [{
+						"id": "list",
+						"value": "tipoIncremento"
+					},
+					{
+						"id": "value",
+						"value": "Index Only"
+					}
+				]
+			}
+		},
+
+		{
+			"id": "tipoAntena",
+			"sectionId": "equipos",
+			"description": "Tipo Antena",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "/api/v1/catalog/domains/TIPO_ANTENA_EQUIPO",
+			"regex": ""
+		},
+		{
+			"id": "rentaEquipo",
+			"sectionId": "equipos",
+			"description": "Renta",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "rentaEquipo",
+				"descripcion": "Cálculo de renta del equipo en la fila",
+				"level": "1",
+				"type": "calculation",
+				"params": [{
+					"id": "col",
+					"value": "tipoAntena"
+				}]
+			}
+		},
+		{
+			"id": "rentaEquipoAdicional",
+			"sectionId": "3",
+			"description": "Renta Equipo Adicional",
+			"dataType": "number",
+			"content": "0",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "[0-9]+([\\.,][0-9]+)?",
+			"operation": {
+				"name": "addColList",
+				"descripcion": "Cálculo de renta de equipo adicional",
+				"level": "2",
+				"type": "calculation",
+				"params": [{
+						"id": "list",
+						"value": "equipos"
+					},
+					{
+						"id": "col",
+						"value": "rentaEquipo"
+					}
+				]
+			}
+		},
+		{
+			"id": "renta",
+			"sectionId": "3",
+			"description": "Renta",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+
+		},
+		{
+			"id": "rentaTotalTorre",
+			"sectionId": "3",
+			"description": "Renta Total Torre",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "[0-9]+([\\.,][0-9]+)?",
+			"operation": {
+				"name": "add",
+				"descripcion": "Sumar valores",
+				"level": "3",
+				"type": "calculation",
+				"params": [{
+						"id": "value",
+						"value": "renta"
+					},
+					{
+						"id": "value",
+						"value": "rentaEquipoAdicional"
+					}
+				]
+			}
+		},
+		{
+			"id": "montoReduccion",
+			"sectionId": "6",
+			"description": "Monto de reducción",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "totalRentaReduccion",
+			"sectionId": "6",
+			"description": "Total de renta con reducción",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "subtraction",
+				"descripcion": "Restar valores",
+				"level": "4",
+				"type": "calculation",
+				"params": [{
+						"id": "value",
+						"value": "rentaTotalTorre"
+					},
+					{
+						"id": "value",
+						"value": "montoReduccion"
+					}
+				]
+			}
+		},
+		{
+			"id": "idActivo",
+			"sectionId": "5",
+			"description": "Asset Number",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": true,
+			"apiRestListOfValue": "",
+			"regex": "\\d+",
+			"operation": {
+				"name": "findValueInContract",
+				"descripcion": "Asigna un valor que se ha agregado en el contrato ",
+				"level": "1",
+				"type": "validation",
+				"params": [{
+					"id": "idActivo"
+				}]
+			}
+		},
+		{
+			"id": "rentaTerreno",
+			"sectionId": "3",
+			"description": "Renta de Terreno",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "[0-9]+([\\.,][0-9]+)?",
+			"operation": {
+				"name": "rentaTerreno",
+				"descripcion": "Calcula valor a partir de una tabla",
+				"level": "2",
+				"type": "calculation",
+				"params": [{
+						"id": "searchBy",
+						"value": "idActivo"
+					},
+					{
+						"id": "moneda",
+						"value": "tipoMoneda"
+					}
+				]
+			}
+		},
+		{
+			"id": "nombreSitio",
+			"sectionId": "5",
+			"description": "Nombre del sitio",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": true,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "findValueInSitio",
+				"descripcion": "Asigna un valor que se encuentra en base de datos filtrado por key",
+				"level": "2",
+				"type": "validation",
+				"params": [{
+					"id": "key",
+					"value": "idActivo"
+				}, {
+					"id": "set",
+					"value": "nombreSitio"
+				}]
+			}
+		},
+		{
+			"id": "direccionSitio",
+			"sectionId": "5",
+			"description": "Dirección del sitio",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": true,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "findValueInSitio",
+				"descripcion": "Asigna un valor que se encuentra en base de datos filtrado por key",
+				"level": "2",
+				"type": "validation",
+				"params": [{
+					"id": "key",
+					"value": "idActivo"
+				}, {
+					"id": "set",
+					"value": "direccionSitio"
+				}]
+			}
+		},
+		{
+			"id": "tipoSitio",
+			"sectionId": "5",
+			"description": "Tipo de Sitio",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": true,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "findValueInSitio",
+				"descripcion": "Asigna un valor que se encuentra en base de datos filtrado por key",
+				"level": "2",
+				"type": "validation",
+				"params": [{
+					"id": "key",
+					"value": "idActivo"
+				}, {
+					"id": "set",
+					"value": "tipoSitio"
+				}]
+			}
+		},
+		{
+			"id": "latitud",
+			"sectionId": "5",
+			"description": "Latitud",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": true,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "findValueInSitio",
+				"descripcion": "Asigna un valor que se encuentra en base de datos filtrado por key",
+				"level": "2",
+				"type": "validation",
+				"params": [{
+					"id": "key",
+					"value": "idActivo"
+				}, {
+					"id": "set",
+					"value": "latitud"
+				}]
+			}
+		},
+		{
+			"id": "longitud",
+			"sectionId": "5",
+			"description": "Longitud",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": true,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "findValueInSitio",
+				"descripcion": "Asigna un valor que se encuentra en base de datos filtrado por key",
+				"level": "2",
+				"type": "validation",
+				"params": [{
+					"id": "key",
+					"value": "idActivo"
+				}, {
+					"id": "set",
+					"value": "longitud"
+				}]
+			}
+		},
+		{
+			"id": "tipoTorre",
+			"sectionId": "5",
+			"description": "Tipo de Torre",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "findValueInSitio",
+				"descripcion": "Asigna un valor que se encuentra en base de datos filtrado por key",
+				"level": "2",
+				"type": "validation",
+				"params": [{
+					"id": "key",
+					"value": "idActivo"
+				}, {
+					"id": "set",
+					"value": "tipoTorre"
+				}]
+			}
+		},
+		{
+			"id": "alturaTorre",
+			"sectionId": "5",
+			"description": "Altura de la Torre",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "",
+			"operation": {
+				"name": "findValueInSitio",
+				"descripcion": "Asigna un valor que se encuentra en base de datos filtrado por key",
+				"level": "2",
+				"type": "validation",
+				"params": [{
+					"id": "key",
+					"value": "idActivo"
+				}, {
+					"id": "set",
+					"value": "alturaTorre"
+				}]
+			}
+		},
+		{
+			"id": "rentaTotalTerreno",
+			"sectionId": "3",
+			"description": "Renta Total Terreno",
+			"dataType": "number",
+			"content": "",
+			"editable": false,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": "[0-9]+([\\.,][0-9]+)?",
+			"operation": {
+				"name": "add",
+				"descripcion": "Sumar valores",
+				"level": "3",
+				"type": "calculation",
+				"params": [{
+						"id": "value",
+						"value": "rentaTerreno"
+					},
+					{
+						"id": "value",
+						"value": "rentaEspacioAdicional"
+					}
+				]
+			}
+		}
+	]
+}]

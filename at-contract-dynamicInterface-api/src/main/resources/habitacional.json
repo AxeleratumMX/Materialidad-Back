@@ -1,0 +1,447 @@
+{
+	"tipo": "HABITACIONAL",
+	"nameTemplate": "HABITACIONAL",
+	"values": [{
+			"id": "tipoInmueble",
+			"sectionId": "1",
+			"description": "Tipo de inmueble",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""		},
+		{
+			"id": "numeroInmueble",
+			"sectionId": "1",
+			"description": "Número",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""		},
+		{
+			"id": "calleInmueble",
+			"sectionId": "1",
+			"description": "Calle",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "coloniaInmueble",
+			"sectionId": "1",
+			"description": "Colonia",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "alcaldiaInmueble",
+			"sectionId": "1",
+			"description": "Alcaldía / Municipio",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "cpInmueble",
+			"sectionId": "1",
+			"description": "C.P.",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "estadoInmueble",
+			"sectionId": "1",
+			"description": "Estado",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "predialInmueble",
+			"sectionId": "1",
+			"description": "No. Predial",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "superficieInmueble",
+			"sectionId": "1",
+			"description": "superficie",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "nombreArrendador",
+			"sectionId": "2",
+			"description": "Nombre",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "rfcArrendador",
+			"sectionId": "2",
+			"description": "RFC",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "domicilioArrendador",
+			"sectionId": "2",
+			"description": "Domicilio",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "telArrendador",
+			"sectionId": "2",
+			"description": "Teléfono",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "nombreArrendatario",
+			"sectionId": "3",
+			"description": "Nombre",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "rfcArrendatario",
+			"sectionId": "3",
+			"description": "RFC",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "domicilioArrendatario",
+			"sectionId": "3",
+			"description": "Domicilio",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "telArrendatario",
+			"sectionId": "3",
+			"description": "Teléfono",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "nombreFiador",
+			"sectionId": "4",
+			"description": "Nombre",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "domicilioFiador",
+			"sectionId": "4",
+			"description": "Domicilio",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "telFiador",
+			"sectionId": "4",
+			"description": "Teléfono",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "propiedadGarantia",
+			"sectionId": "4",
+			"description": "Propiedad en Garantía",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "numeroRegPropiedadGarantia",
+			"sectionId": "4",
+			"description": "No. Reg. Púb de la Prop. del bien en garantía",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "volumenRegPropiedadGarantia",
+			"sectionId": "4",
+			"description": "Volúmen de Reg. Púb de la Prop. del bien en garantía",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "libroRegPropiedadGarantia",
+			"sectionId": "4",
+			"description": "Libro Reg. Púb de la Prop. del bien en garantía",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "seccionRegPropiedadGarantia",
+			"sectionId": "4",
+			"description": "Sección Reg. Púb de la Prop. del bien en garantía",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "unidadRegPropiedadGarantia",
+			"sectionId": "4",
+			"description": "Unidad Reg. Púb de la Prop. del bien en garantía",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "renta",
+			"sectionId": "5",
+			"description": "Renta mensual",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "mantenimiento",
+			"sectionId": "5",
+			"description": "¿Aplica cuota de mantenimiento?",
+			"dataType": "booleano",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "montoMantenimiento",
+			"sectionId": "5",
+			"description": "Monto de cuota de mantenimiento",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "estacionamiento",
+			"sectionId": "5",
+			"description": "¿Cuenta con estacionamiento?",
+			"dataType": "booleano",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "lugaresEstacionamiento",
+			"sectionId": "5",
+			"description": "Lugares de estacionamiento",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "inicioVigencia",
+			"sectionId": "5",
+			"description": "Inicio de la vigencia",
+			"dataType": "date",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "finVigencia",
+			"sectionId": "5",
+			"description": "Fin de la vigencia",
+			"dataType": "date",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "cargaPermitida",
+			"sectionId": "5",
+			"description": "Carga permitida en M2",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "beneficiario",
+			"sectionId": "5",
+			"description": "Beneficiario de la Renta",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "beneficiarioCuenta",
+			"sectionId": "5",
+			"description": "Cuenta del beneficiario",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "deposito",
+			"sectionId": "5",
+			"description": "Monto del depósito",
+			"dataType": "number",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		},
+		{
+			"id": "fechaFirma",
+			"sectionId": "5",
+			"description": "Fecha de firma del Contrato",
+			"dataType": "string",
+			"content": "",
+			"editable": true,
+			"optional": false,
+			"apiRestListOfValue": "",
+			"regex": ""
+		}
+	],
+	"sections": [{
+			"id": "1",
+			"description": "Inmueble",
+			"type": "value"
+		},
+		{
+			"id": "2",
+			"description": "Arrendador",
+			"type": "value"
+		},
+		{
+			"id": "3",
+			"description": "Arrendatario",
+			"type": "value"
+		},
+		{
+			"id": "4",
+			"description": "Fiador",
+			"type": "value"
+		},
+		{
+			"id": "5",
+			"description": "Inf. del Contrato",
+			"type": "value"
+		}
+	]
+}

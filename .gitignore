@@ -1,0 +1,15 @@
+/.idea
+/target
+.DS_Store
+.classpath
+.project
+.settings/
+**/*/.idea
+**/*.iml
+**/target
+.springBeans
+RequestMappingsViewConfig.java
+*.log
+.factorypath
+camunda-db.mv.db
+
